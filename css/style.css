@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+  }
+.container {
+    width: 800px;
+    margin:0 auto;
+}
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white url(../images/background.jpg) no-repeat center/cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+a:focus {
+    text-decoration: underline;
+}
+
+li > a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li {
+    padding-left: 40px;
+}   
+.logo > a {
+    outline: none;
+    color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+} 
+main {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info__small-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.info__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+.icons__item:first-child::before{
+    content:"\f0c2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+.icons__item:nth-child(2)::before{
+    content:"\f3d1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+.icons__item:nth-child(3)::before{
+    content:"\f2f2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+.item__text {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top:10px;
+}
+.intro__form {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left:20px;
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-top:12px;
+    padding-bottom: 12px;
+}
+input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color:;
+}
+input:focus {
+    background-color: rgba(9, 216, 98,.5);
+}
+input::placeholder {
+    font-style: italic;
+}
+button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding:15px 20px;
+    color: white;
+    margin-top: 40px;
+    border-radius: 8px;
+    margin-left: 20px;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    
+}
+button:focus {
+    background-color:rgba(9, 216, 98,.5);
+    text-decoration: underline;
+    box-shadow: -webkit-box-shadow: inset 10px 10px 42px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 10px 42px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 10px 42px 0px rgba(0,0,0,0.75);
+}
